@@ -7,7 +7,7 @@ export const GalleryItem = ({ gallery, openModal }) => {
       {gallery.map(({ id, webformatURL, tags, largeImageURL }) => (
         <li key={id} className={s.imageGalleryItem}>
           <a
-            href="#"
+            href=""
             onClick={() => {
               openModal({ src: largeImageURL, alt: tags });
             }}
