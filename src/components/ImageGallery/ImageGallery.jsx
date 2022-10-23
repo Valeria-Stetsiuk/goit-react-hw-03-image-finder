@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import { ToastContainer, toast } from 'react-toastify';
 
 import { imageApi } from "../API/ImageApi";
-import { GalleryItem } from 'components/ImageGalleryItem/ImageGalleryItem';
+import { GalleryItem } from '../ImageGalleryItem/ImageGalleryItem';
 import { Button } from '../Button/Button';
 import { Modal } from '../Modal/Modal';
-import ThreeDots from '../Loader/Loader';//
+import ThreeDots from '../Loader/Loader';
 
 
 
