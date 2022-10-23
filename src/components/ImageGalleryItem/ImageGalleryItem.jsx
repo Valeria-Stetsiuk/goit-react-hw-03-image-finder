@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import s from './ImageGalleryItem.module.css';
+import s from '../ImageGalleryItem/ImageGalleryItem.module.css';
 
 export const GalleryItem = ({ gallery, openModal }) => {
   return (
