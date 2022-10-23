@@ -1,19 +1,19 @@
 import PropTypes from 'prop-types';
-import s from '../ImageGalleryItem/ImageGalleryItem.module.css';
+import s from './ImageGalleryItem.module.css';
 
 export const GalleryItem = ({ gallery, openModal }) => {
   return (
     <>
       {gallery.map(({ id, webformatURL, tags, largeImageURL }) => (
-        <li key={id} className={s.imageGalleryItem}>
+        <li key={id} className={s.itemGallery}>
           <a
-            href=""
+            href="#"
             onClick={() => {
               openModal({ src: largeImageURL, alt: tags });
             }}
             rel="noreferrer"
           >
-            <img className={s.imageGalleryItemImage} src={webformatURL} alt={tags} width="350"  />
+            <img className={s.image} src={webformatURL} alt={tags} width="350"  />
           </a>
         </li>
       ))}
