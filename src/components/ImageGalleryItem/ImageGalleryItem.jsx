@@ -6,7 +6,7 @@ export const GalleryItem = ({ gallery, openModal }) => {
     <>
       {gallery.map(({ id, webformatURL, tags, largeImageURL }) => (
         <li key={id} className={s.itemGallery}>
-          <a href="#" onClick={() => {
+          <a href="##" onClick={() => {
             openModal({ src: largeImageURL, alt: tags });
           }}
             rel="noreferrer">
