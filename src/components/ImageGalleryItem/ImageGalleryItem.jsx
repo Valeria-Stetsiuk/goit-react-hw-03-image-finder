@@ -6,13 +6,10 @@ export const GalleryItem = ({ gallery, openModal }) => {
     <>
       {gallery.map(({ id, webformatURL, tags, largeImageURL }) => (
         <li key={id} className={s.itemGallery}>
-          <a
-            href="#"
-            onClick={() => {
-              openModal({ src: largeImageURL, alt: tags });
-            }}
-            rel="noreferrer"
-          >
+          <a href="ftftd" onClick={() => {
+            openModal({ src: largeImageURL, alt: tags });
+          }}
+            rel="noreferrer">
             <img className={s.image} src={webformatURL} alt={tags} width="350"  />
           </a>
         </li>
