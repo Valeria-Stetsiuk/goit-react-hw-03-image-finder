@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
-import { ToastContainer, toast } from 'react-toastify';
+import {  toast } from 'react-toastify';
 
 import { imageApi } from "../../services/ImageApi";
 import { GalleryItem } from '../ImageGalleryItem/ImageGalleryItem';
@@ -84,14 +84,12 @@ export class Gallery extends Component {
         {error && (
           <span className="error">Oops! Something went wrong. {error}</span>
         )}
-        {!isLoading && !error && gallery.length === 0 && <ToastContainer /> }
+        {/* {!isLoading && !error && gallery.length === 0 && <ToastContainer /> } */}
         <ul className="imageGallery">
-          {!!gallery.length && (
-            <GalleryItem
-              gallery={gallery}
-              openModal={this.updateCurrentImage}
-            />
-          )}
+          {!!gallery.length &&
+            gallery.map(item =>(
+              <GalleryItem {...item} openModal={this.updateCurrentImage} />
+            ))}
         </ul>
         {isLoading && <ThreeDots />}
         {!!gallery.length &&
