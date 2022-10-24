@@ -2,7 +2,7 @@ import { Component } from 'react';
 import PropTypes from 'prop-types';
 import { ToastContainer, toast } from 'react-toastify';
 
-import { imageApi } from "../API/ImageApi";
+import { imageApi } from "../../services/ImageApi";
 import { GalleryItem } from '../ImageGalleryItem/ImageGalleryItem';
 import { Button } from '../Button/Button';
 import { Modal } from '../Modal/Modal';
